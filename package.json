@@ -1,0 +1,31 @@
+{
+  "name": "@f0c1s/browser-storage",
+  "version": "1.0.0",
+  "description": "Storage in browsers | LocalStorage | SessionStorage",
+  "main": "src/browser-storage.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/tsc src/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/node-browser-storage.git"
+  },
+  "keywords": [
+    "localStorage",
+    "sessionStorage",
+    "storage",
+    "browser",
+    "browser-storage"
+  ],
+  "author": "Anubhav <iamanubhavsaini@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/node-browser-storage/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/node-browser-storage#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.22",
+    "typescript": "^4.1.3"
+  }
+}
