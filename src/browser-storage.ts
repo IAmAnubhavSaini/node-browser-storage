@@ -14,7 +14,7 @@ class LocalStorage extends CommonStorage {
     }
 
     static get(key: string) {
-        return LocalStorage.exists() ? {key, value: localStorage.getItem(key)} : '';
+        return LocalStorage.exists() ? {key, value: localStorage.getItem(key)} : LocalStorage.default();
     }
 
     static set(key: string, value: string) {
@@ -39,7 +39,7 @@ class SessionStorage extends CommonStorage {
     }
 
     static get(key: string) {
-        return SessionStorage.exists() ? {key, value: sessionStorage.getItem(key)} : '';
+        return SessionStorage.exists() ? {key, value: sessionStorage.getItem(key)} : SessionStorage.default();
     }
 
     static set(key: string, value: string) {

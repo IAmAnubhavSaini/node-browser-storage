@@ -45,7 +45,7 @@ var LocalStorage = /** @class */ (function (_super) {
         return _super.exists.call(this, localStorage);
     };
     LocalStorage.get = function (key) {
-        return LocalStorage.exists() ? { key: key, value: localStorage.getItem(key) } : '';
+        return LocalStorage.exists() ? { key: key, value: localStorage.getItem(key) } : LocalStorage["default"]();
     };
     LocalStorage.set = function (key, value) {
         if (LocalStorage.exists()) {
@@ -75,7 +75,7 @@ var SessionStorage = /** @class */ (function (_super) {
         return _super.exists.call(this, sessionStorage);
     };
     SessionStorage.get = function (key) {
-        return SessionStorage.exists() ? { key: key, value: sessionStorage.getItem(key) } : '';
+        return SessionStorage.exists() ? { key: key, value: sessionStorage.getItem(key) } : SessionStorage["default"]();
     };
     SessionStorage.set = function (key, value) {
         if (SessionStorage.exists()) {

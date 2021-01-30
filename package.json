@@ -1,6 +1,6 @@
 {
   "name": "@f0c1s/browser-storage",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Storage in browsers | LocalStorage | SessionStorage",
   "main": "src/browser-storage.js",
   "scripts": {
